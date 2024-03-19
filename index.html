@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Encriptador de texto</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="https://www.aluracursos.com" target="_blank" class="link-logo">
+        <img src="./img/Logo.png" alt="Logo Alura" class="logo" />
+      </a>
+    </header>
+    <main class="main">
+      <section class="container-principal">
+        <div class="text-principal">
+          <textarea
+            id="texto-entrada"
+            class="campo-texto"
+            placeholder="Texto a encriptar"
+          ></textarea>
+          <div class="sugerencia">
+            <img src="./img/bi_exclamation-circle-fill.png" alt="" /> Solo
+            letras minúsculas y sin acentos
+            <p class="text-sugerencia"></p>
+          </div>
+          <div class="btn">
+            <div class="button-principal">
+              <button class="btnEncriptar" onclick="btnEncriptar()">
+                Encriptar!
+              </button>
+              <button class="btnDesencriptar" onclick="btnDesencriptar()">
+                Desencriptar!
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="texto-respuesta inicial">
+        <div class="respuesta-figura" id="respuesta-figura">
+          <img src="./img/Muneco.png" alt="" class="figura" />
+          <h2 class="titulo-figura">Ningún mensaje fue encontrado</h2>
+          <p class="parrafo-figura">
+            Ingresa el texto que desees encriptar o desencriptar.
+          </p>
+        </div>
+      </section>
+      <section class="texto-respuesta final none">
+        <textarea id="texto-respuesta" class="respuesta" disabled></textarea>
+        <button class="btn-copiar" onclick="copiar()">Copiar</button>
+      </section>
+    </main>
+    <footer>
+      <div class="logos-footer">
+        <a href="https://www.linkedin.com/in/cesarpinedachacon" target="_blank"
+          ><img
+            class="logos"
+            src="https://cdn-icons-png.flaticon.com/512/2582/2582575.png"
+            alt=""
+        /></a>
+        <a href="https://github.com/pinedacesar" target="_blank"
+          ><img
+            class="logos"
+            src="https://cdn.freebiesupply.com/logos/large/2x/github-icon-logo-svg-vector.svg"
+            alt=""
+        /></a>
+      </div>
+      <section class="text-footer">
+        &copy; Desarrollado por César Pineda, Grupo 6. ONE Oracle - Alura Latam
+        2024
+      </section>
+    </footer>
+  </body>
+  <script src="./js/index.js"></script>
+</html>

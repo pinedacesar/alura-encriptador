@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./img/cms_files_10224_1671210503Prancheta_3.png" alt="Insignia de alura latam">
+</p>
+
 # Encriptador de Texto | Challenge ONE - Oracle Next Education
 
 ---
@@ -39,5 +43,6 @@ La letra "u" es convertida para "ufat"
 ---
 
 ### Visualización de la aplicación
-
-![alt text](./img/image.png)
+<p align="center">
+  <img src="./img/image.png" alt="imagen principal de la application">
+</p>

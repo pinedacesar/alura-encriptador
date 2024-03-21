@@ -47,14 +47,13 @@ function btnDesencriptar() {
 }
 
 function desencriptar(textoDesencriptado) {
-  for (let i = 0; i < matriz_code.length; i++) {
-    if (textoDesencriptado.includes(matriz_code[i][0])) {
-      textoDesencriptado = textoDesencriptado.replaceAll(
-        matriz_code[i][1],
-        matriz_code[i][0]
-      );
-    }
-  }
+  let newTexto = textoDesencriptado
+    .replace(/ufat/g, 'u')
+    .replace(/ober/g, 'o')
+    .replace(/imes/g, 'i')
+    .replace(/enter/g, 'e')
+    .replace(/ai/g, 'a');
+  textoDesencriptado = newTexto;
   return textoDesencriptado;
 }
 
